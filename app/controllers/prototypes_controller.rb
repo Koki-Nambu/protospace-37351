@@ -57,7 +57,7 @@ class PrototypesController < ApplicationController
   def move_to_index
     if user_signed_in?
       if current_user.id == @prototype.user.id
-        redirect_to action: :edit
+
       else
         redirect_to action: :index
       end
